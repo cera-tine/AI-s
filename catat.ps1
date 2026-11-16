@@ -82,7 +82,7 @@ if (-not (Test-Path $logFile)) {
     Add-Content -Path $logFile -Value '' -Encoding utf8
 }
 
-$baris = "- ``$jam`` **$labelAlat** — $teks"
+$baris = "- ``$jam`` **$labelAlat**: $teks"
 Add-Content -Path $logFile -Value $baris -Encoding utf8
 
 Write-Host "  tercatat: $baris" -ForegroundColor DarkGray
